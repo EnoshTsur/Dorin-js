@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="./local-storage.js"></script>
+</head>
+
+<body>
+
+    <img class="img-header" src="./assets/title.png" alt="My Task Board">
+
+    <div style="min-width: 100%;">
+        <div class="inputs-container">
+            <div>
+                <input id="task-input" type="text" placeholder="Task details" onkeypress="clearInputStyles(taskId)" value="klkl">
+            </div>
+            <div>
+                <input id="task-date" type="date" onkeypress="clearInputStyles(dateId)" value="1990-09-03">
+            </div>
+            <div>
+                <input id="task-time" type="time" onkeypress="clearInputStyles(timeId)" value="18:34">
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button id="dorin" class="btn btn-primary" onclick="onSave()">Save</button>
+        <button class="btn btn-info" onclick="clearNoteInputs()">Clear Fields</button>
+    </div>
+
+    <div id="notes-container"></div>
+    
+    <script src="./theme.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./id-generator.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

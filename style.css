@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/tile.jpg");
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffe18e; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(216, 171, 88); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(155, 104, 10); 
+  }
+
+.img-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.btn-hover:hover{
+    cursor: pointer;
+}
+
+.inputs-container {
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+input {
+    background-image: url("./assets/formbg.jpg");
+    width: 500px;
+    height: 50px;
+    border: none;
+    padding-left: 5rem;
+}
+
+.btn-container {
+    position: relative;
+    text-align: center;
+}
+
+#notes-container > div {
+    width: 15em;
+    height: 30em;
+    background-image: url("./assets/notebg.png");
+    background-repeat: no-repeat;
+    margin-left: 2em;
+    display: inline-block;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 713px) {
+    .inputs-container {
+        overflow: hidden;
+    }
+}
